@@ -1,0 +1,40 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">Add Room</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeLogin()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="doLogin()">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Room Type</span>
+                    <select name="room_type" id="">
+                        <option label="" selected="selected" value="?"></option>
+                        <option label="Bedroom" value="0">Bedroom</option>
+                        <option label="Living Room" value="1">Living Room</option>
+                        <option label="Kitchen" value="2">Kitchen</option>
+                        <option label="Bathroom" value="3">Bathroom</option>
+                        <option label="Other Areas" value="4">Other Areas</option>
+                    </select>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Area (Sq.Ft)</span>
+                    <input type="text" >
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Budget Range</span>
+                    <select name="budget_range" id="">
+                        <option value="">Budget</option>
+                        <option value="">Value for Money</option>
+                        <option value="">Luxury</option>
+                    </select>
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive" type="submit">Create</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>
